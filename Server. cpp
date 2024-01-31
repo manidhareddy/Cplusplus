@@ -8,6 +8,11 @@
 #define MAX_CLIENTS 10
 #define BUFFER_SIZE 1024
 
+struct Client {
+    int socket;
+    std::string name;
+};
+
 int main() {
     int server_socket, new_socket;
     struct sockaddr_in address;
